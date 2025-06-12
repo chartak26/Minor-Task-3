@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Cards & Slider</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="container">
+        <h1>My Skills</h1>
+        
+        <!-- Skills Grid Section -->
+        <section id="skills-grid-section">
+            <h2>Skills Grid</h2>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar html-bg" style="width: 95%"></div>
+                    </div>
+                    <p class="skill-description">
+                        Advanced semantic HTML5, accessibility standards, and modern markup practices.
+                    </p>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon css">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar css-bg" style="width: 90%"></div>
+                    </div>
+                    <p class="skill-description">
+                        CSS Grid, Flexbox, animations, transitions, and responsive design principles.
+                    </p>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon js">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar js-bg" style="width: 85%"></div>
+                    </div>
+                    <p class="skill-description">
+                        ES6+, DOM manipulation, async programming, and modern JavaScript frameworks.
+                    </p>
+                </div>
+                
+                <!-- Skill Card 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon react">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-bar react-bg" style="width: 80%"></div>
+                    </div>
+                    <p class="skill-description">
+                        React hooks, context API, component lifecycle, and state management.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Slider Section -->
+        <section id="skills-slider-section">
+            <h2>Skills Slider</h2>
+            <div class="slider-container">
+                <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="skills-slider" id="skillsSlider">
+                    <!-- Slide 1 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar node-bg" style="width: 75%"></div>
+                        </div>
+                        <p>Building server-side applications with Express, REST APIs, and authentication.</p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar python-bg" style="width: 85%"></div>
+                        </div>
+                        <p>Data analysis, scripting, and backend development with Django and Flask.</p>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 70%; background: #007396;"></div>
+                        </div>
+                        <p>Object-oriented programming, Spring framework, and Android development.</p>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 80%; background: #f34f29;"></div>
+                        </div>
+                        <p>Version control, branching strategies, and collaborative workflows.</p>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 85%; background: #00758f;"></div>
+                        </div>
+                        <p>Database design, complex queries, optimization, and ORM technologies.</p>
+                    </div>
+                    
+                    <!-- Slide 6 -->
+                    <div class="skill-slide">
+                        <div class="slider-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h3>PHP</h3>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="width: 65%; background: #777bb4;"></div>
+                        </div>
+                        <p>Server-side scripting, WordPress development, and Laravel framework.</p>
+                    </div>
+                </div>
+                
+                <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
